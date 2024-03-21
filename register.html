@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>hola soy Dora</div>
+    <form onsubmit="register()">
+        <a href="index.html" class="symbol" title="Go Back">&#x1F8A0;</a>
+        <h1>Register</h1>
+        <input type="email" placeholder="Enter your email id" id="mail" required >
+        
+        <input type="password" placeholder="Create a strong password" id="pass" required >
+        
+        <input type="submit" value="Register" id="registerBt">
+    </form>
+    <div id="blurreddiv">
+        <dialog id="errorDialog">
+            <h1>Oops...</h1>
+            <p>Looks Like an account with same the Email exists</p>
+            <a href="index.html">Sign In</a>
+        </dialog>
+        <dialog id="okDialog">
+            <h1>Registered Successfully</h1>
+            <a href="index.html">Sign In</a>
+        </dialog>
+    </div>
     
 </body>
 <script src="index.js"></script>
