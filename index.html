@@ -16,19 +16,26 @@
             <input type="password" placeholder="password123" id="pass" required >
             
             <input type="submit" value="Signin" id="submitBt">
+            <div class="hint" onclick="openPop()">Hint</div>
         </form>
-            <dialog id="errorDialog">
-                <h1>Oops...
-                    <span id="closebt" title="close pop up" onclick="closePop()">&#11199;</span>
-                </h1>
-                <p>Looks Like you dont have an account</p>
-                <a href="register.html">Register</a>
-            </dialog>
-            <dialog id="okDialog">
-                <h1>Logged In Successfully
-                    <span id="closebt" title="close pop up" onclick="closePop()">&#11199;</span>
-                </h1>
-            </dialog>
+        <dialog id="hintDialog">
+            <span id="closebt" title="close pop up" onclick="closePop()">&#11199;</span>
+            <div>Email : <b>abc@gmail.com</b></div>
+            <div>Password : <b>abcdegf</b></div>
+            
+        </dialog>
+        <dialog id="errorDialog">
+            <h1>Oops...
+                <span id="closebt" title="close pop up" onclick="closePop()">&#11199;</span>
+            </h1>
+            <p>Looks Like you dont have an account</p>
+            <a href="register.html">Register</a>
+        </dialog>
+        <dialog id="okDialog">
+            <h1>Logged In Successfully
+                <span id="closebt" title="close pop up" onclick="closePop()">&#11199;</span>
+            </h1>
+        </dialog>
         
     </div>
        
