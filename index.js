@@ -49,8 +49,13 @@ function closePop(){
     let overlay=document.getElementById("blurreddiv")
     let modal1=document.getElementById("errorDialog")
     let modal2=document.getElementById("okDialog")
-
+    let modal3=document.getElementById("hintDialog")
     modal1.close();
     modal2.close();
+    modal3.close()
     
+}
+function openPop(){
+    let modal3=document.getElementById("hintDialog")
+    modal3.show()
 }
