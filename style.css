@@ -112,7 +112,6 @@ a:active{
     transform: translateY(0px);
 }
 #closebt{
-    font-size: 1em;
     position: absolute;
     right:10px;
     top: 0px;
@@ -121,4 +120,20 @@ a:active{
 }
 h1{
     margin: 0px;
+}
+.hint{
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration:underline ;
+}
+#hintDialog[open]{
+    position: absolute;
+    bottom: 10%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+    font-weight: 500;
 }
