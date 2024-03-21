@@ -17,16 +17,18 @@
             
             <input type="submit" value="Signin" id="submitBt">
         </form>
-        <div id="blurreddiv">
             <dialog id="errorDialog">
-                <h1>Oops...</h1>
+                <h1>Oops...
+                    <span id="closebt" title="close pop up" onclick="closePop()">&#11199;</span>
+                </h1>
                 <p>Looks Like you dont have an account</p>
                 <a href="register.html">Register</a>
             </dialog>
             <dialog id="okDialog">
-                <h1>Logged In Successfully</h1>
+                <h1>Logged In Successfully
+                    <span id="closebt" title="close pop up" onclick="closePop()">&#11199;</span>
+                </h1>
             </dialog>
-        </div>
         
     </div>
        
